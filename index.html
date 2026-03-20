@@ -592,7 +592,24 @@
 
             var mixer = mixitup(containerEl);
         </script>
+  <!-- <script>
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+      let mixerSettings = {
+      animation: {
+      duration: 200,
+      queueLimit: 1,
+      enable: true
+      }
+      };
+
+      if (reduceMotion) {
+        mixerSettings.animation.duration = 0;
+        mixerSettings.animation.enable = false;
+      }
+
+      var mixer = mixitup(containerEl, mixerSettings);
+      </script> -->
   
 
 </body>
