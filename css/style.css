@@ -332,9 +332,9 @@ footer{
     .skip a{
         transition: none;
     }
-    .meet-grid, .mix{
+    /* .meet-grid, .mix{
         transition-duration: 0s;
-    }
+    } */
 }
 
 
