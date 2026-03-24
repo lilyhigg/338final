@@ -13,3 +13,4 @@ function checkphoto(element){
     element.style.margin="auto"
     element.style.display="block"
 }
+    

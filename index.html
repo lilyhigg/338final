@@ -577,7 +577,7 @@
           </details>
         </article>
         </div>
-        </div>
+      </div>
     </section>
   </main>
   <footer>
@@ -588,29 +588,37 @@
    <script src="dist/mixitup.min.js"></script>
 
         <script>
-            var containerEl = document.querySelector('.meet-container');
+            var containerEl = document.querySelector('.meet-grid');
 
             var mixer = mixitup(containerEl);
         </script>
-  <!-- <script>
+  <script>
+    var containerEl = document.querySelector('.meet-container');
+
+    // var mixer = mixitup(containerEl);
+
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      let mixerSettings = {
-      animation: {
-      duration: 200,
-      queueLimit: 1,
-      enable: true
-      }
-      };
+    let mixerSettings = {
+    animation: {
+    duration: 500,
+    queueLimit: 1,
+    enable: true
+    }
+    };
 
-      if (reduceMotion) {
-        mixerSettings.animation.duration = 0;
-        mixerSettings.animation.enable = false;
-      }
+    if (reduceMotion) {
+    console.log("Reduced Motion")
+    mixerSettings.animation.duration = 0;
+    mixerSettings.animation.enable = false;
+    }
+    else{
+    console.log("Not reduced")
+    }
 
-      var mixer = mixitup(containerEl, mixerSettings);
-      </script> -->
-  
+    var mixer = mixitup(containerEl, mixerSettings);
+    </script> 
+      
 
 </body>
 </html>
