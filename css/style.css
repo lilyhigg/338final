@@ -6,6 +6,11 @@ html{
     padding: 5px;
 }
 
+.lb-caption{
+    color: white;
+    font-family: 'Akshar';
+    background-color: #323333;
+}
 /* makes sure the images do not extent past their parents and adding line height*/
 body{
     box-sizing: border-box;
